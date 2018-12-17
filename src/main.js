@@ -2,7 +2,7 @@
 //     alert('it works again!');
 //   };
 
-// import './main.css';
+import './main.css';
 
 import Fireworks from 'fireworks-canvas';
  
