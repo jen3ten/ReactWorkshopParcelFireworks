@@ -200,9 +200,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = function _default() {
   var container = document.getElementById('container');
   var options = {
-    maxRockets: 5,
+    maxRockets: 20,
     // max # of rockets to spawn
-    rocketSpawnInterval: 150,
+    rocketSpawnInterval: 50,
     // millisends to check if new rockets should spawn
     numParticles: 200,
     // number of particles to spawn when rocket explodes (+0-10)
@@ -253,7 +253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63832" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64068" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

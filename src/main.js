@@ -9,8 +9,8 @@ import Fireworks from 'fireworks-canvas';
 export default () => {
   const container = document.getElementById('container');
   const options = {
-    maxRockets: 5,            // max # of rockets to spawn
-    rocketSpawnInterval: 150, // millisends to check if new rockets should spawn
+    maxRockets: 20,            // max # of rockets to spawn
+    rocketSpawnInterval: 50, // millisends to check if new rockets should spawn
     numParticles: 200,        // number of particles to spawn when rocket explodes (+0-10)
     explosionMinHeight: 0.2,  // percentage. min height at which rockets can explode
     explosionMaxHeight: 0.9,  // percentage. max height before a particle is exploded
